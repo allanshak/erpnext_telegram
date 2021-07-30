@@ -1,8 +1,6 @@
-# Erpnext Telegram Integration And Notifications
+# ERPNext Telegram Integration And Notifications
 
-Telegram Integration and Extra Notifications For Frappe & Erpnext to sending fast notifications for more productivity.
-
-
+Telegram Integration and Extra Notifications For Frappe & ERPNext to sending fast notifications for more productivity.
 
 # Main features
 
@@ -20,11 +18,9 @@ Telegram Integration and Extra Notifications For Frappe & Erpnext to sending fas
 
 - Get alerts on important dates
 
-
-
 # How to Install
 
-1. `./env/bin/pip install python-telegram-bot --upgrade` "*This command is necessary to install the python-telegram-bot into bench environment. Otherwise, the pip3/pip command will install it in the python environment"*
+1. `./env/bin/pip install python-telegram-bot --upgrade` "_This command is necessary to install the python-telegram-bot into bench environment. Otherwise, the pip3/pip command will install it in the python environment"_
 
 2. `bench get-app erpnext_telegram_integration https://github.com/yrestom/erpnext_telegram.git`
 
@@ -43,13 +39,11 @@ Telegram Integration and Extra Notifications For Frappe & Erpnext to sending fas
 
 7. Get Telegram Bot Token from `BotFather`
 
-
-
 # Setup and Use:
 
 ## Telegram Notifications:
 
-In Erpnext Telegram Integration
+In ERPNext Telegram Integration
 
 1. Go to → Telegram Settings -> New Enter Telegram Bot Token
 
@@ -64,15 +58,13 @@ In Erpnext Telegram Integration
    7. Press "Get Chat ID" And if everything is ok it will get the chat ID.
    8. Press Save.
 
-3. Go to → Telegram Notification -> New You can configure various notifications in your system to remind you of important activities. As the original [Erpnext Notification](https://erpnext.com/docs/user/manual/en/setting-up/notifications).
+3. Go to → Telegram Notification -> New You can configure various notifications in your system to remind you of important activities. As the original [ERPNext Notification](https://erpnext.com/docs/user/manual/en/setting-up/notifications).
 
    Here chose the profile of "Telegram User Settings" want to send to him the notification or use the checkbox "Dynamic Recipients" to get the recipient from the DocType dynamically if it has a Link Field like "Customer", "Supplier", "Student" or "Employee", for this it needs to set up a "Telegram User Settings" for the customer, supplier ...
 
 4. Also, you can send directly a Telegram message from any form view by going to the Menu and click "Send To Telegram".
 
 5. When the app send a Telegram Notification it will write a new log into Extra Notifications > Extra Notification Log .
-
-
 
 ## SMS Notifications:
 
@@ -82,13 +74,11 @@ in Extra Notifications:
 
 2. Go to → SMS Notification → New
 
-   You can configure various notifications in your system to remind you of important activities. As the original [Erpnext Notification](https://erpnext.com/docs/user/manual/en/setting-up/notifications).
+   You can configure various notifications in your system to remind you of important activities. As the original [ERPNext Notification](https://erpnext.com/docs/user/manual/en/setting-up/notifications).
 
    Here chose the "Recipients" want to send to them the notification or use the checkbox "Dynamic Recipients" to get the recipient from the DocType dynamically if it has a Link Field like "Customer", "Supplier", "Student" or "Employee", for this it needs to set up a Contact for the customer, supplier..., and make sure the contact is related to the customer or supplier... and has Primary Mobile number as default.
 
 3. Press Save.
-
-
 
 ## Date Notifications:
 
@@ -104,15 +94,11 @@ in Extra Notifications:
 
 When the Date Notification is trigger it will send an email to the related user and it will write a new log into Extra Notifications > Extra Notification Log .
 
-
-
 ## Dependencies
 
 1. [Frappe](https://github.com/frappe/frappe) Version 12+
-2. Python Version  3+
+2. Python Version 3+
 3. [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot)
-
-
 
 ## License
 
